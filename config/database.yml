@@ -5,21 +5,21 @@ default: &default
 
 development:
   <<: *default
-  database: firstblog_development  # Use a unique database name
-  username: firstblog
-  password: password123
+  database: new_blog  # Use a unique database name
+  username: edward
+  password: Nsumba1984&&
   host: localhost
 
 test:
   <<: *default
-  database: firstblog_test  # Use a unique database name for testing
-  username: firstblog
-  password: password123  # Ensure this is correct
+  database: new_blog   # Use a unique database name for testing
+  username: edward
+  password: Nsumba1984&&  # Ensure this is correct
   host: localhost
 
 production:
   <<: *default
-  database: firstblog_production  # Use a unique database name for production
-  username: firstblog
+  database: new_blog    # Use a unique database name for production
+  username: edward
   password: <%= ENV['DATABASE_PASSWORD'] %>  # Ensure you have this environment variable set
   host: localhost
