@@ -1,5 +1,20 @@
-<%= simple_form_for @blog_post do |f| %>
-  <%= f.input :title %>
-  <%= f.input :body %>
-  <%= f.button :submit %>
+<%= simple_form_for @blog_post, html: { class: "max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-lg" } do |f| %>
+  <div class="mb-4">
+    <%= f.input :title,
+                required: true,
+                label_html: { class: "text-xl font-semibold text-gray-800" },
+                input_html: { class: "w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" } %>
+  </div>
+
+  <div class="mb-4">
+    <%= f.input :body,
+                required: true,
+                as: :text,
+                label_html: { class: "text-xl font-semibold text-gray-800" },
+                input_html: { class: "w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" } %>
+  </div>
+
+  <div class="form-actions mt-6">
+    <%= f.button :submit, "Save", class: "w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500" %>
+  </div>
 <% end %>

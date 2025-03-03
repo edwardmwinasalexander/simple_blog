@@ -1,24 +1,5 @@
-# README
+A simple blog where signed users can Create , Read , Update and destroy their posts Ruby on Rails has been used as a backend framework while Tailwind CSS for for front end to style the app. Gems used are:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Simple-form
+Devise
+Faker
