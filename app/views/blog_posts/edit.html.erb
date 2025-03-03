@@ -1,0 +1,13 @@
+
+
+<h1>Editing blog post</h1>
+
+<%= render "blog_posts/form" %>
+
+<br>
+
+<div>
+
+
+  <%= button_to "Delete", @blog_post, method: :delete, data: {turbo_confirm: "Are you sure!"} %>
+</div>
